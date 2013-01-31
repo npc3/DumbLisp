@@ -1,0 +1,11 @@
+(do
+  (def d (dict (list (quote one) (quote two) (quote three)) (list 1 2 3)))
+  (print (getitem d (quote one)))
+  (print
+    (try-catch
+      (getitem d (quote one-hundred-thousand))
+      "success at failure"))
+  (setitem d (quote one) "one")
+  (print (getitem d (quote one)))
+  (setitem d (quote one-hundred-thousand) 100000)
+  (print (getitem d (quote one-hundred-thousand))))

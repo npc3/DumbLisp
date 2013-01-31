@@ -1,0 +1,9 @@
+(do
+  (def one 1)
+  (def a-string "string")
+  (def vec (vector 1 2 3 4 5))
+  (def map (dict (list "one" "two" "three") (list 1 2 3)))
+  (print (= one 1))
+  (print (= a-string "string"))
+  (print (= vec (vector 1 2 3 4 5)))
+  (print (= map (dict (list "one" "two" "three") (list 1 2 3)))))

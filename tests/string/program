@@ -1,0 +1,5 @@
+(do
+  (def s "123456")
+  (print s)
+  (print (concat s "789"))
+  (print (slice s 1 3)))

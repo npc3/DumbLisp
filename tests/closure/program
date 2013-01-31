@@ -1,0 +1,24 @@
+(do
+  (defn f (i)
+    (list (fn () i) (fn (new-i) (set i new-i))))
+  (def tmp (f 1))
+  (def geti (car tmp))
+  (def seti (car (cdr tmp)))
+  (print
+    (try-catch
+      i
+      "i doesn't exist"))
+  (print (geti))
+  (seti 2)
+  (print (geti))
+  (def tmp2 (f 17))
+  (def geti2 (car tmp2))
+  (def seti2 (car (cdr tmp2)))
+  (print (geti))
+  (print (geti2))
+  (seti 3)
+  (print (geti))
+  (print (geti2))
+  (seti2 18)
+  (print (geti))
+  (print (geti2)))

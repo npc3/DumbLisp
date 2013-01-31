@@ -1,0 +1,8 @@
+(do
+  (def l (list 1 2 3))
+  (print l)
+  (print (cons 0 l))
+  (print l)
+  (print (cdr (cons 0 3)))
+  (print (cdr (list 0)))
+  (print (car (cons 3 0))))

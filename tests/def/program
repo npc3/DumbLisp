@@ -1,0 +1,3 @@
+(do
+  (def x 1)
+  (print x))

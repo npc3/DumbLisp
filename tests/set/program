@@ -1,0 +1,4 @@
+(do
+  (def x 1)
+  (set x 2)
+  (print (= x 2)))

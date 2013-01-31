@@ -1,0 +1,1 @@
+The interpreter only supports reference equality for objects other than ints and symbols, so (= "string" "string") and such is expected to be nil.
